@@ -1,0 +1,684 @@
+/* General styling */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
+body {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  background: linear-gradient(to bottom, #232526, #414345);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+nav {
+    background-color: rgba(0, 0, 107, 0.94);
+  padding: 10px 20px;
+  align-items: center;
+  height: 60px;
+  display: flex;
+  justify-content: center; /* Centers the nav bar content */
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #b0c4de;
+}
+
+/* Navigation bar */
+.title-container {
+  text-align: left;
+}
+.title-container h1 {
+  font-size: 36px;
+  margin: 0;
+  position: relative;
+}
+.title-container h2 {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 0;
+  position: relative;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Logo on left, dropdown on right */
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    position: relative;
+    width: 100%;
+}
+
+.logo-container img {
+    width: 120px; /* Adjust size as needed */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.bell-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+hr {
+    border: 0.5px solid gray;
+    margin: 5px 0;
+}
+
+.logout {
+    color: red;
+    font-weight: bold;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 60px;
+}
+
+.image-container img {
+    width: 75%;
+    height: auto;
+}
+
+.text-container {
+    width: 50%;
+    text-align: left;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: -5px;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: darkblue;
+}
+.info-section {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.ethical-ai-section {
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);/* Center them horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    width: 30px;
+    height: auto;
+    margin-bottom: 10px; /* Space below the logo */
+}
+
+.principle h3 {
+    font-size: 18px;
+    color: blue;
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.principle p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.hero {
+  background: linear-gradient(to bottom, #2c2c2c, #1c1c1c); /* dark gradient */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #003cff;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.signin-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  color: black;
+}
+
+form {
+  max-width: 400px;        /* 💡 This sets the desired width */
+  margin: 0 auto;          /* 💡 Center the form */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signin-section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #000; /* 🔹 Ensure heading is visible */
+}
+
+.signin-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+form button {
+  padding: 10px 20px;
+  background-color: #0047ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+form p {
+  font-size: 0.9rem;
+  color: #000; /* 🔹 Make 'Don't have an account?' black */
+}
+
+form a {
+  color: #0047ff; /* 🔹 Keep Register link blue */
+  text-decoration: none;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  background: url('your-background-image.jpg') no-repeat center center/cover;
+  padding: 40px;
+  color: white;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #111;
+  color: white;
+  padding: 40px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 80px; /* Increased padding for a larger section */
+  background: url('images/bg.jpg') no-repeat center center/cover;
+  color: white;
+  gap: 40px;
+}
+
+.section-title {
+  font-size: 32px; /* Increased font size for the title */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-left {
+  flex: 1;
+  min-width: 350px; /* Increased minimum width */
+  max-width: 60%; /* Slightly larger width */
+}
+
+.about-right {
+  flex: 1;
+  min-width: 350px; /* Increased minimum width */
+  max-width: 40%; /* Adjusted width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-right img {
+  width: 100%;
+  max-width: 400px; /* Enlarged image size */
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.about-left h2 {
+  font-size: 36px; /* Increase the font size */
+  font-weight: bold; /* Make it stand out */
+  text-align: left; /* Adjust alignment if needed */
+  line-height: 1.3; /* Improve readability */
+}
+
+.image-caption {
+  font-size: 0.rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.cta-outline {
+  padding: 10px 20px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.background-section {
+  background-color: #1434A4; /* deep blue */
+  padding: 60px 30px;
+  color: white;
+  text-align: center;
+  font-size: 14px; /* Adjust the size as needed */
+}
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/* Join the Course Section */
+.join-course {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.join-course h2 {
+  font-size: 2.8rem;
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+
+.join-course p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0047ff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0033cc;
+}
+
+.social-links {
+  margin-top: 40px;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+.join-course {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .join-course h2 {
+    font-size: 1.8rem;
+  }
+
+  .join-course p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.card {
+  background-color: black;
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 20px;
+  font-size: 0.4rem;
+  line-height: 1.6;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;   /* 🔥 top-align text */
+  justify-content: center;   /* 🔥 center horizontally */
+}
+
+.signin-section h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #111;
+}
+
+.about-left {
+  line-height: 1.8; /* More breathing room */
+  font-size: 1.1rem; /* Slightly larger */
+  max-width: 700px;
+}
+
+.about-section {
+  background: linear-gradient(to right, #111 70%, rgba(0, 0, 0, 0.85)),
+              url('your-bg-image.jpg') center/cover no-repeat;
+}
+
+.background-section {
+  position: relative;
+  background-color: #1434A4;
+  padding: 60px 30px;
+  color: white;
+  text-align: center;
+}
+
+.background-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adds contrast */
+  z-index: 0;
+}
+
+.background-section * {
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  width: 400px; /* Reduce the width of the boxes */
+  height: auto; /* Keeps aspect ratio */
+  background-color: black; /* Ensure they remain black */
+  padding: 10px; /* Reduce padding */
+  border-radius: 8px; /* Keep rounded corners */
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Maintain zoom effect */
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px; /* Reduce spacing between boxes */
+  justify-items: center;
+}
+
+.card:hover {
+  transform: scale(1.1); /* Slight zoom effect when hovered */
+}
+.form-box input {
+  width: 100%;
+  max-width: 350px; /* or 300px for tighter */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section, .projects-section, .about-ceo, .contact-me {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+img, .ceo-photo img {
+  vertical-align: top;
+}
+
+.background-section {
+  position: relative;
+  color: white;
+}
+
+.background-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.background-section > * {
+  position: relative;
+  z-index: 2;
+}
