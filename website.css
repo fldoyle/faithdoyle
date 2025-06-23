@@ -1,4 +1,5 @@
 /* General styling */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
 body {
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -11,10 +12,13 @@ body {
   text-align: center;
   scroll-behavior: smooth;
 }
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
 
 /* Navigation bar */
 nav {
-  background-color: rgba(0, 0, 107, 0.94);
+  background-color: black;
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -54,10 +58,82 @@ nav {
 .nav-links a:hover {
   color: #b0c4de;
 }
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
 
 /* Profile Picture */
-.photo-container {
-  text-align: center;
+.hero-banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: black;
+  color: white;
+  padding: 0 50px;
+}
+
+.hero-text {
+  z-index: 2;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  padding: 12px 24px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: white;
+  color: black;
+}
+
+.hero-scroll-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  animation: scroll-hero-images 40s linear infinite;
+  z-index: 1;
+}
+
+.hero-scroll-images img {
+  height: 100vh;
+  width: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.hero-scroll-images img:hover {
+  opacity: 0.6;
+}
+
+@keyframes scroll-hero-images {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
 .photo-container img {
@@ -109,14 +185,13 @@ nav {
   justify-content: center;
   gap: 30px;
   padding: 40px;
-  background: rgba(0, 0, 107, 0.8);
-  border-radius: 12px;
+  background:black;
   color: white;
   text-align: left;
 }
 
 .ceo-photo img {
-  height: 200px;
+  height: 750px;
   border-radius: 0%;
   box-shadow: 4px 10px rgba(0, 0, 0, 0.4);
 }
@@ -136,96 +211,55 @@ nav {
   color: #b0c4de;
 }
 
-/* Projects Section */
-.projects-section {
+/* Services Section */
+.services-section {
   padding: 40px;
-  background-color: #fff;
-  color: #000;
+  background-color:black;
+  color:white;
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
 
-.projects-grid {
+.services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 25px;
+  gap: 80px;
   justify-content: center;
 }
 
-.project-tile {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 12px;
+.services-tile {
+  background-color: black;
+  padding: 100px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px white;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 18px;
-  color: #000;
+  color: white;
 }
 
-.project-tile:hover {
+.services-tile:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  background-color: #f9f9f9;
+  box-shadow: 0 10px 20px white;
+  background-color: black;
 }
 
-.projects-section h2 {
+.services-section h2 {
   font-size: 28px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 2px;
   margin-bottom: 30px;
-  color: #000;
-}
-.contact-me {
-  padding: 40px;
-  background-color: #000066; /* Dark blue */
-  color: #fff;
-  text-align: center;
-  font-family: "Raleway", sans-serif;
-  border-radius: 12px;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Ensures rows of 2 */
-  gap: 20px;
-  justify-content: center;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #1a1a6e;
-  padding: 15px 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease-in-out;
-}
-
-.contact-item:hover {
-  transform: scale(1.05);
-}
-
-.contact-item img {
-  width: 40px;
-  height: auto;
-}
-
-.contact-item p {
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
+  color:white;
 }
 /* Blog Section */
 #blog {
   text-align: center;
   padding: 60px;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: black;
+  color: white;
   font-family: "Raleway", sans-serif;
 }
 
@@ -235,14 +269,14 @@ nav {
   font-weight: 700;
   letter-spacing: 1.5px;
   margin-bottom: 20px;
-  color: #000066; /* Deep blue for sophistication */
+  color: black;
 }
 
 /* Blog Description */
 #blog p {
   font-size: 18px;
   font-weight: 400;
-  color: #555;
+  color: white;
   max-width: 800px;
   margin: 0 auto 40px;
 }
@@ -250,9 +284,16 @@ nav {
 /* Blog Container */
 .blog-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
   gap: 30px;
   padding: 30px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .blog-container {
+    grid-template-columns: 1fr; /* Stack in one column */
+  }
 }
 
 /* Blog Post Styling */
@@ -290,7 +331,7 @@ nav {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 107, 0.8);
+  background: rgba(0, 0, 0, 0.2);
   padding: 12px 18px;
   border-radius: 8px;
   color: white;
@@ -304,11 +345,24 @@ nav {
 .blog-post:hover .blog-text {
   opacity: 1;
 }
+
+/* Added to style the whole page */
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Make all headers white across the site */
+h1, h2, h3, h4, h5, h6 {
+  color: white !important;
+}
 /* Show Section Styling */
 #show {
   text-align: center;
   padding: 40px;
-  background-color: navy;
+  background-color: #1e1e1e;
+  color: white;
 }
 
 .show-image-container {
@@ -334,4 +388,228 @@ nav {
   height: 450px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/*new css 20-6-25*/
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0a0a0a;
+  color: white;
+  padding: 80px 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.about-left img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.about-right {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-right h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+.about-right p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.about-links {
+  margin-top: 25px;
+}
+
+.about-links a {
+  display: inline-block;
+  margin-right: 25px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.about-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: white;
+  bottom: -3px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.about-links a:hover {
+  color: #f0f0f0;
+}
+
+.about-links a:hover::after {
+  width: 100%;
+}
+
+/* Services Section */
+.services-section {
+  padding: 80px 40px;
+  background-color: #0a0a0a;
+  color: white;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.services-section .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 👈 Force 3 columns */
+  gap: 40px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.service-box {
+  background-color: #121212;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+}
+
+.service-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.service-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills-section {
+  padding: 80px 40px;
+  background-color: #232323;
+  color: white;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto 0;
+}
+
+.skill-box {
+  background-color: #121212;
+  border-radius: 12px;
+  padding: 40px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-percent {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f94d00;
+}
+
+.skill-label {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sticky-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #000; /* Dark background */
+  color: #ccc;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.sticky-footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+.sticky-footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-text {
+  margin-top: 5px;
+}
+body {
+  padding-bottom: 60px; /* space so footer doesn't cover content */
 }
