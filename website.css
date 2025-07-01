@@ -146,7 +146,7 @@ html {
 
 @keyframes scroll-hero-images {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  100% { transform: translateX(-500%); } /* 5 images = -500% */
 }
 
 .photo-container img {
@@ -177,10 +177,15 @@ html {
 }
 
 .image-carousel img {
-  height: 120px;
+  height: 80px;
   border-radius: 12px;
-  flex-shrink: 0; /* Keeps images uniform */
+  flex-shrink: 0;
+  background-color: white;       /* White background inside box */
+  padding: 10px;                  /* Adds spacing inside the box */
+  border: 1px solid #ccc;         /* Thin border for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
+
 
 @keyframes slideAnimation {
   0% {
@@ -540,6 +545,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ccc;
 }
 
+
 .service-icon {
   width: 50px;
   height: 50px;
@@ -698,9 +704,8 @@ body {
 .card-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-font-size: 12px;
+  gap: 40px;
+  align-items: flex-start;
 }
 .card {
   background-color: black;
@@ -770,22 +775,25 @@ font-size: 12px;
 }
 
 .card {
-  width: 400px; /* Reduce the width of the boxes */
-  height: auto; /* Keeps aspect ratio */
-  background-color: black; /* Ensure they remain black */
-  padding: 10px; /* Reduce padding */
-  border-radius: 8px; /* Keep rounded corners */
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   text-align: center;
-  transition: transform 0.3s ease-in-out; /* Maintain zoom effect */
 }
 
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* Reduce spacing between boxes */
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
 }
-
 .card:hover {
   transform: scale(1.1); /* Slight zoom effect when hovered */
 }
