@@ -112,7 +112,7 @@ html {
   text-decoration: none;
   font-weight: bold;
   border-radius: 30px;
-  transition: background 0.3s ease;
+  transition: background 5s ease;
 }
 
 .hero-btn:hover {
@@ -121,13 +121,13 @@ html {
 }
 
 .hero-scroll-images {
+  animation: scroll-hero-images 100s linear infinite;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 200%; /* if you're repeating 5 images twice */
   height: 100%;
   display: flex;
-  animation: scroll-hero-images 40s linear infinite;
   z-index: 1;
 }
 
