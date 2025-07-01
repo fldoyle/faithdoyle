@@ -121,11 +121,11 @@ html {
 }
 
 .hero-scroll-images {
-  animation: scroll-hero-images 200s linear infinite;
+  animation: scroll-hero-images 400s linear infinite;
   position: absolute;
   top: 0;
   left: 0;
-  width: 200%; /* if you're repeating 5 images twice */
+  width: max-content;
   height: 100%;
   display: flex;
   z-index: 1;
