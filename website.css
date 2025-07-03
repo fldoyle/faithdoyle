@@ -11,9 +11,11 @@ body {
   padding: 0;
   text-align: center;
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
+  overflow-x: hidden !important;
 }
 
 /* Navigation bar */
@@ -121,13 +123,13 @@ html {
 }
 
 .hero-scroll-images {
-  animation: scroll-hero-images 800s linear infinite;
+  display: flex;
+  width: max-content;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  width: max-content;
-  height: 100%;
-  display: flex;
+  animation: scroll-hero-images 160s linear infinite; /* Adjust speed as needed */
   z-index: 1;
 }
 
@@ -145,9 +147,14 @@ html {
 }
 
 @keyframes scroll-hero-images {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-500%); } /* 5 images = -500% */
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
+
 
 .photo-container img {
   width: 100%; /* Make it take up the full width */
