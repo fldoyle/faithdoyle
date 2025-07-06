@@ -6,16 +6,14 @@ body {
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
-  background: linear-gradient(to bottom, black, black);
+  background: linear-gradient(to bottom, black, #414345);
   margin: 0;
   padding: 0;
   text-align: center;
   scroll-behavior: smooth;
-  overflow-x: hidden !important;
 }
 html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
-  overflow-x: hidden !important;
 }
 
 /* Navigation bar */
@@ -123,13 +121,13 @@ html {
 }
 
 .hero-scroll-images {
-  display: flex;
-  width: max-content;
-  height: 100vh;
+  animation: scroll-hero-images 800s linear infinite;
   position: absolute;
   top: 0;
   left: 0;
-  animation: scroll-hero-images 160s linear infinite; /* Adjust speed as needed */
+  width: max-content;
+  height: 100%;
+  display: flex;
   z-index: 1;
 }
 
@@ -147,14 +145,9 @@ html {
 }
 
 @keyframes scroll-hero-images {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-500%); } /* 5 images = -500% */
 }
-
 
 .photo-container img {
   width: 100%; /* Make it take up the full width */
@@ -172,6 +165,7 @@ html {
   font-size: 20px;
   font-weight: bold;
   color: black;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -181,16 +175,13 @@ html {
   gap: 20px;
   position: relative;
   animation: slideAnimation 20s linear infinite; /* Unified animation */
+  margin-bottom: 30px;
 }
 
 .image-carousel img {
   height: 80px;
   border-radius: 12px;
   flex-shrink: 0;
-  background-color: white;       /* White background inside box */
-  padding: 10px;                  /* Adds spacing inside the box */
-  border: 1px solid #111;         /* Thin border for contrast */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 
@@ -208,11 +199,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 85px;
   padding: 40px;
   background:black;
   color: white;
   text-align: left;
+  margin-top: 40px;
 }
 
 .ceo-photo img {
@@ -222,8 +214,11 @@ html {
 }
 
 .ceo-text {
-  max-width: 600px;
+  max-width: 800px;
+  font-size: 1rem; /* ↓ smaller text */
+  line-height: 1.5;   /* ↓ tighter spacing */
 }
+
 
 .ceo-title a {
   font-size: 24px;
@@ -505,7 +500,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Services Section */
 .services-section {
   padding: 80px 40px;
-  background-color: black;
+  background-color: #0a0a0a;
   color: white;
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -576,7 +571,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .skills-section {
   padding: 80px 40px;
-  background-color: black;
+  background-color: #232323;
   color: white;
   text-align: center;
 }
@@ -696,7 +691,7 @@ body {
   background-color: #0056b3;
 }
 .background-section {
-  background-color: black; /* deep blue */
+  background-color: #1434A4; /* deep blue */
   padding: 60px 30px;
   color: white;
   text-align: center;
@@ -761,7 +756,7 @@ body {
 
 .background-section {
   position: relative;
-  background-color: black;
+  background-color: #1434A4;
   padding: 60px 30px;
   color: white;
   text-align: center;
@@ -844,4 +839,16 @@ img, .ceo-photo img {
 .background-section > * {
   position: relative;
   z-index: 2;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #b0c4de; /* Optional: light blue on hover */
+}
+
+.footer-contact {
+  margin-top: 60px; /* Adjust this number to your liking */
 }
