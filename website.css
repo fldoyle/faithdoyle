@@ -1,29 +1,21 @@
 /* General styling */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
-/* Ensure root and all layout blocks go black */
-html, body {
-  height: 100%;
+body {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  background: linear-gradient(to bottom, black, #414345);
   margin: 0;
   padding: 0;
-  font-family: "Raleway", sans-serif;
-  background-color: black !important;
-  color: white !important;
-}
-
-/* Catch everything */
-* {
-  background-color: transparent !important;
-  color: white !important;
-  box-sizing: border-box;
-}
-
-/* Apply black to all common layout containers */
-section, div, header, footer, main, article, aside, nav {
-  background-color: transparent !important;
-  color: inherit;
+  text-align: center;
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
+  overflow-x: hidden !important;
 }
 
 /* Navigation bar */
@@ -33,12 +25,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.logo-container img {
-  width: 180px; /* 👈 bumped up from 120px */
-  height: 200px;
-  display: block;
+  height: auto;
 }
 
 .hero-section, .hero-banner {
@@ -83,6 +70,12 @@ nav {
 html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
 }
+.logo-container img {
+    width: 120px; /* Adjust size as needed */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
 
 /* Profile Picture */
 .hero-banner {
@@ -103,7 +96,7 @@ html {
 }
 
 .hero-text h1 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -121,7 +114,7 @@ html {
   text-decoration: none;
   font-weight: bold;
   border-radius: 30px;
-  transition: background 0.3s ease;
+  transition: background 5s ease;
 }
 
 .hero-btn:hover {
@@ -130,13 +123,13 @@ html {
 }
 
 .hero-scroll-images {
+  display: flex;
+  width: max-content;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  animation: scroll-hero-images 40s linear infinite;
+  animation: scroll-hero-images 160s linear infinite; /* Adjust speed as needed */
   z-index: 1;
 }
 
@@ -154,21 +147,31 @@ html {
 }
 
 @keyframes scroll-hero-images {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.photo-container img {
+  width: 100%; /* Make it take up the full width */
+  height: auto; /* Maintain aspect ratio */
+  box-shadow: 4px 10px rgba(0, 0, 0, 0.4);
 }
 /* Image carousel */
 .image-carousel-container {
   padding: 20px;
   text-align: center;
-  margin-bottom: 100px; /* Increased from 50px */
+  margin-bottom: 50px;
   background-color: white;
 }
 .image-carousel-title {
   font-size: 20px;
   font-weight: bold;
   color: black;
-  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -177,20 +180,17 @@ html {
   white-space: nowrap;
   gap: 20px;
   position: relative;
-  animation: slideAnimation 20s linear infinite;
-  margin-bottom: 100px; /* 👈 Add this line */
+  animation: slideAnimation 20s linear infinite; /* Unified animation */
 }
-
 
 .image-carousel img {
   height: 80px;
   border-radius: 12px;
   flex-shrink: 0;
-  margin-bottom: 50px;
-}
-
-.carousel-spacer {
-  height: 80px; /* Adjust this value to your liking */
+  background-color: white;       /* White background inside box */
+  padding: 10px;                  /* Adds spacing inside the box */
+  border: 1px solid #ccc;         /* Thin border for contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 
@@ -208,12 +208,11 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 85px;
+  gap: 30px;
   padding: 40px;
   background:black;
   color: white;
   text-align: left;
-  margin-top: 40px;
 }
 
 .ceo-photo img {
@@ -223,11 +222,8 @@ html {
 }
 
 .ceo-text {
-  max-width: 800px;
-  font-size: 1rem; /* ↓ smaller text */
-  line-height: 1.5;   /* ↓ tighter spacing */
+  max-width: 600px;
 }
-
 
 .ceo-title a {
   font-size: 24px;
@@ -848,16 +844,4 @@ img, .ceo-photo img {
 .background-section > * {
   position: relative;
   z-index: 2;
-}
-
-a {
-  color: white;
-}
-
-a:hover {
-  color: #b0c4de; /* Optional: light blue on hover */
-}
-
-.footer-contact {
-  margin-top: 60px; /* Adjust this number to your liking */
 }
