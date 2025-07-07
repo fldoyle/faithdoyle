@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   line-height: 30px;
   font-weight: 300;
-  background: linear-gradient(to bottom, black, #414345);
+  background: black;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -189,7 +189,7 @@ html {
   flex-shrink: 0;
   background-color: white;       /* White background inside box */
   padding: 10px;                  /* Adds spacing inside the box */
-  border: 1px solid #ccc;         /* Thin border for contrast */
+  border: 1px solid #111;         /* Thin border for contrast */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
@@ -383,7 +383,7 @@ html {
 
 /* Added to style the whole page */
 body {
-  background-color: #1e1e1e;
+  background-color: black;
   color: white;
   font-family: "Raleway", sans-serif;
 }
@@ -505,7 +505,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Services Section */
 .services-section {
   padding: 80px 40px;
-  background-color: #0a0a0a;
+  background-color: black;
   color: white;
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -576,7 +576,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .skills-section {
   padding: 80px 40px;
-  background-color: #232323;
+  background-color: black;
   color: white;
   text-align: center;
 }
@@ -696,7 +696,7 @@ body {
   background-color: #0056b3;
 }
 .background-section {
-  background-color: #1434A4; /* deep blue */
+  background-color: black; /* deep blue */
   padding: 60px 30px;
   color: white;
   text-align: center;
@@ -761,7 +761,7 @@ body {
 
 .background-section {
   position: relative;
-  background-color: #1434A4;
+  background-color: black;
   padding: 60px 30px;
   color: white;
   text-align: center;
