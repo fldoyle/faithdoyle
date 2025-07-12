@@ -73,14 +73,14 @@ html {
 .logo-container img {
     width: 120px; /* Adjust size as needed */
     position: absolute;
-    top: 20px;
+    top: -10px;
     left: 20px;
 }
 
 /* Profile Picture */
 .hero-banner {
   position: relative;
-  height: 100vh;
+  height: 70vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -93,6 +93,7 @@ html {
 .hero-text {
   z-index: 2;
   max-width: 600px;
+  padding-left: 80px;
 }
 
 .hero-text h1 {
@@ -105,6 +106,7 @@ html {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .hero-btn {
@@ -125,7 +127,6 @@ html {
 .hero-scroll-images {
   display: flex;
   width: max-content;
-  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -134,16 +135,16 @@ html {
 }
 
 .hero-scroll-images img {
-  height: 100vh;
+  height: 70vh;
   width: auto;
   object-fit: cover;
   flex-shrink: 0;
-  opacity: 0.4;
+  opacity: 0.55;
   transition: opacity 0.3s;
 }
 
 .hero-scroll-images img:hover {
-  opacity: 0.6;
+  opacity: 0.65;
 }
 
 @keyframes scroll-hero-images {
@@ -163,7 +164,7 @@ html {
 }
 /* Image carousel */
 .image-carousel-container {
-  padding: 20px;
+  padding: 50px;
   text-align: center;
   margin-bottom: 50px;
   background-color: white;
@@ -185,12 +186,9 @@ html {
 
 .image-carousel img {
   height: 80px;
-  border-radius: 12px;
   flex-shrink: 0;
   background-color: white;       /* White background inside box */
   padding: 10px;                  /* Adds spacing inside the box */
-  border: 1px solid #111;         /* Thin border for contrast */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
 
@@ -209,10 +207,14 @@ html {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 40px;
+  padding: 100px 40px;
   background:black;
   color: white;
   text-align: left;
+}
+
+.about-ceo a {
+  color: white;
 }
 
 .ceo-photo img {
@@ -286,6 +288,7 @@ html {
   max-width: 100px;
 }
 
+.service-box p, 
 .service-box h3 {
   text-align: center;
 }
@@ -714,16 +717,6 @@ body {
   gap: 40px;
   align-items: flex-start;
 }
-.card {
-  background-color: black;
-  width: 300px;
-  height: 500px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-  display: flex;
-  flex-direction: column;
-}
 
 .card img {
   width: 100%;
@@ -782,10 +775,8 @@ body {
 }
 
 .card {
-  background-color: black;
   color: white;
   padding: 20px;
-  border-radius: 10px;
   flex: 1;
   max-width: 350px;
   display: flex;
@@ -793,6 +784,14 @@ body {
   justify-content: space-between;
   height: 100%;
   text-align: center;
+  
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+
+  background-color: #121212;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card-container {
@@ -844,4 +843,12 @@ img, .ceo-photo img {
 .background-section > * {
   position: relative;
   z-index: 2;
+}
+
+.contact-group {
+  margin-top: 100px;
+}
+.contact-group a {
+  color: white;
+  margin-bottom: 50px;
 }
