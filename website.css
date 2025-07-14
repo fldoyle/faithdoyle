@@ -130,7 +130,7 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  animation: scroll-hero-images 160s linear infinite; /* Adjust speed as needed */
+  animation: scroll-hero-images 100s linear infinite; /* Adjust speed as needed */
   z-index: 1;
 }
 
@@ -139,7 +139,7 @@ html {
   width: auto;
   object-fit: cover;
   flex-shrink: 0;
-  opacity: 0.55;
+  opacity: 0.6;
   transition: opacity 0.3s;
 }
 
@@ -846,7 +846,7 @@ img, .ceo-photo img {
 }
 
 .contact-group {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 .contact-group a {
   color: white;
