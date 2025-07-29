@@ -80,7 +80,11 @@ html {
 /* Profile Picture */
 .hero-banner {
   position: relative;
+<<<<<<< HEAD
   height: 90vh;
+=======
+  height: 70vh;
+>>>>>>> 03b5b22f3ff58f8b9355ea45cf4838c2953e7f73
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -135,7 +139,11 @@ html {
 }
 
 .hero-scroll-images img {
+<<<<<<< HEAD
   height: 90vh;
+=======
+  height: 70vh;
+>>>>>>> 03b5b22f3ff58f8b9355ea45cf4838c2953e7f73
   width: auto;
   object-fit: cover;
   flex-shrink: 0;
