@@ -240,6 +240,7 @@ p {
     align-items: center;
     flex-direction: column;
     margin-top: 20px;
+    gap: 20px;
 }
 
 .video-container iframe {
@@ -261,9 +262,10 @@ p {
     margin-bottom: 30px;
 }
 .ethical-ai-section {
-    background-color: white;
-    color: black;
-    width: 80%;
+    background-color: black;
+    color: white;
+    width: 100%;
+    max-width: 1200px;
     margin: 40px auto;
     text-align: center;
     padding: 40px 0;
@@ -281,23 +283,32 @@ p {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 30px;
 }
 
 .icon {
-    width: 30px;
+    padding-top: 10px;
+    width: 60px;
     height: auto;
-    margin-bottom: 10px; /* Space below the logo */
 }
 
 .principle h3 {
-    font-size: 18px;
-    color: blue;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
     margin-bottom: 10px; /* Space below the title */
 }
 
 .principle p {
     font-size: 16px;
     line-height: 1.5;
+    color: lightgray;
+}
+
+.principle {
+  background: #111111;
+  border-radius: 10px;
+  padding: 15px 30px;
 }
 .hero {
   background: linear-gradient(to bottom, #2c2c2c, #1c1c1c); /* dark gradient */
