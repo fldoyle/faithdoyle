@@ -242,8 +242,9 @@ p {
     margin-top: 20px;
 }
 
-.video-container video {
+.video-container iframe {
   max-width: 800px;
+  height: 480px;
   width: 100%;
 }
 
@@ -383,14 +384,6 @@ form a {
   text-decoration: none;
 }
 
-.about-section {
-  display: flex;
-  flex-wrap: wrap;
-  background: url('your-background-image.jpg') no-repeat center center/cover;
-  padding: 40px;
-  color: white;
-}
-
 .about-text {
   flex: 1;
   min-width: 300px;
@@ -400,14 +393,6 @@ form a {
 .about-image img {
   max-width: 100%;
   border-radius: 10px;
-}
-.about-section {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #111;
-  color: white;
-  padding: 40px;
-  align-items: center;
 }
 
 .about-text {
@@ -428,6 +413,8 @@ form a {
   justify-content: space-between;
   padding: 80px; /* Increased padding for a larger section */
   background: url('images/bg.jpg') no-repeat center center/cover;
+  align-items: center;
+  background-color: #111;
   color: white;
   gap: 40px;
 }
@@ -629,48 +616,6 @@ html {
               url('your-bg-image.jpg') center/cover no-repeat;
 }
 
-.background-section {
-  position: relative;
-  background-color: #1434A4;
-  padding: 60px 30px;
-  color: white;
-  text-align: center;
-}
-
-.background-section::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Adds contrast */
-  z-index: 0;
-}
-
-.background-section * {
-  position: relative;
-  z-index: 1;
-}
-
-.card {
-  width: 400px; /* Reduce the width of the boxes */
-  height: auto; /* Keeps aspect ratio */
-  background-color: black; /* Ensure they remain black */
-  padding: 10px; /* Reduce padding */
-  border-radius: 8px; /* Keep rounded corners */
-  text-align: center;
-  transition: transform 0.3s ease-in-out; /* Maintain zoom effect */
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px; /* Reduce spacing between boxes */
-  justify-items: center;
-}
-
-.card:hover {
-  transform: scale(1.1); /* Slight zoom effect when hovered */
-}
 .form-box input {
   width: 100%;
   max-width: 350px; /* or 300px for tighter */
@@ -697,18 +642,53 @@ img, .ceo-photo img {
 
 .background-section {
   position: relative;
+  background-color: black;
+  padding: 60px 30px;
   color: white;
+  text-align: center;
+  font-size: 14px; /* Adjust the size as needed */
 }
 
 .background-section::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adds contrast */
+  z-index: 0;
+}
+
+.background-section * {
+  position: relative;
   z-index: 1;
 }
 
-.background-section > * {
-  position: relative;
-  z-index: 2;
+.card {
+  color: white;
+  padding: 20px;
+  flex: 1;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+
+  background-color: #121212;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+}
+.card:hover {
+  transform: scale(1.1); /* Slight zoom effect when hovered */
 }

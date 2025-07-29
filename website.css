@@ -715,14 +715,6 @@ body {
   background-color: #0056b3;
 }
 
-.background-section {
-  background-color: black; /* deep blue */
-  padding: 60px 30px;
-  color: white;
-  text-align: center;
-  font-size: 14px; /* Adjust the size as needed */
-}
-
 .section-title {
   font-size: 2rem;
   margin-bottom: 40px;
@@ -776,6 +768,7 @@ body {
   padding: 60px 30px;
   color: white;
   text-align: center;
+  font-size: 14px; /* Adjust the size as needed */
 }
 
 .background-section::before {
