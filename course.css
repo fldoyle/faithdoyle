@@ -217,9 +217,10 @@ p {
     background-color: darkblue;
 }
 .info-section {
-    width: 80%;
-    margin: 40px auto;
+    max-width: 1200px;
+    margin: 40px;
     text-align: center;
+    justify-self: center;
 }
 
 .info-section h2 {
@@ -241,6 +242,7 @@ p {
     flex-direction: column;
     margin-top: 20px;
     gap: 20px;
+    flex: 2;
 }
 
 .video-container iframe {
@@ -256,6 +258,60 @@ p {
   font-size: 12px;
 }
 
+.info-content-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-content-principles {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.info-content-principle {
+  display: flex;
+  flex-direction: column;
+  border: 1px lightgray solid;
+}
+
+.info-content-principle:hover {
+  background-color: #1c1c1c;
+}
+
+.info-content-principle-button {
+  width: 100%;
+  text-align: left;
+  color: lightgray;
+  background: transparent;
+  padding: 1rem;
+  font-size: 18px;
+  font-weight: 450;
+  justify-content: space-between;
+  display: flex;
+  border-width: 0px;
+  cursor: pointer;
+}
+
+.info-content-principle-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+  padding: 0 10px;
+}
+
+.info-content-principle.active .info-content-principle-content {
+  max-height: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.info-content-principle.active .info-content-principle-button-chevron {
+  transform: rotate(90deg);
+}
+
 .section-title {
     font-size: 24px;
     font-weight: bold;
@@ -269,6 +325,12 @@ p {
     margin: 40px auto;
     text-align: center;
     padding: 40px 0;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .section-title {
