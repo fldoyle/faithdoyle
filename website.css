@@ -80,9 +80,9 @@ html {
 }
 
 .logo-container img {
-  width: 120px; /* Adjust size as needed */
+  width: 150px; /* Adjust size as needed */
   position: absolute;
-  top: -10px;
+  top: -25px;
   left: 20px;
 }
 
@@ -113,7 +113,7 @@ html {
 }
 
 .hero-text p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 30px;
   text-align: left;

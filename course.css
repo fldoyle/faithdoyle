@@ -42,109 +42,11 @@ nav {
 }
 
 /* Navigation bar */
-.title-container {
-  text-align: left;
-}
-.title-container h1 {
-  font-size: 36px;
-  margin: 0;
-  position: relative;
-}
-.title-container h2 {
-  font-size: 12px;
-  font-weight: 300;
-  margin: 0;
-  position: relative;
-}
-
-
-body {
-    background-color: black;
-    color: white;
-    font-family: "Raleway", sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-between; /* Logo on left, dropdown on right */
-    align-items: center;
-    padding: 20px;
-    background-color: black;
-    position: relative;
-    width: 100%;
-}
-
 .logo-container img {
-    width: 120px; /* Adjust size as needed */
+    width: 150px; /* Adjust size as needed */
     position: absolute;
-    top: -15px;
+    top: -25px;
     left: 20px;
-}
-
-.menu-container {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.bell-icon {
-    width: 30px;
-    height: auto;
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn {
-    background-color: transparent;
-    color: white;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #222;
-    min-width: 150px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0;
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #333;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-hr {
-    border: 0.5px solid gray;
-    margin: 5px 0;
-}
-
-.logout {
-    color: red;
-    font-weight: bold;
 }
 
 .hero-section {
@@ -163,6 +65,8 @@ hr {
 }
 
 .image-container {
+  position: relative;
+  overflow: hidden;
   flex: 1;
 }
 
@@ -182,7 +86,7 @@ hr {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50%;
+  width: 100%;
   height: 80%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1.0) 100%);
   pointer-events: none; 
@@ -205,17 +109,19 @@ p {
 }
 
 .cta-button {
-    background-color: blue;
     color: white;
     font-size: 18px;
-    padding: 10px 20px;
     border: none;
     cursor: pointer;
     margin-top: 20px;
-}
-
-.cta-button:hover {
-    background-color: darkblue;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #0047ff;
+    padding: 12px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 .info-section {
     max-width: 1200px;
@@ -244,6 +150,7 @@ p {
     margin-top: 20px;
     gap: 20px;
     flex: 2;
+    width: 100%;
 }
 
 .video-container iframe {
@@ -313,30 +220,6 @@ p {
   transform: rotate(90deg);
 }
 
-.section-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.video-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.section-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.icon {
-    padding-top: 10px;
-    width: 60px;
-    height: auto;
-}
-
 .about-ceo {
   display: flex;
   align-items: center;
@@ -373,39 +256,6 @@ p {
   color: #b0c4de;
 }
 
-.cta-button {
-  display: inline-block;
-  background-color: #003cff;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-.about-text {
-  flex: 1;
-  min-width: 300px;
-  padding: 20px;
-}
-
-.about-image img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.about-text {
-  flex: 1;
-  min-width: 300px;
-  padding: 20px;
-}
-
-.about-image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-}
-
 .about-section {
   display: flex;
   flex-wrap: wrap;
@@ -419,66 +269,9 @@ p {
 }
 
 .section-title {
-  font-size: 32px; /* Increased font size for the title */
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.about-left {
-  flex: 1;
-  min-width: 350px; /* Increased minimum width */
-  max-width: 60%; /* Slightly larger width */
-}
-
-.about-right {
-  flex: 1;
-  min-width: 350px; /* Increased minimum width */
-  max-width: 40%; /* Adjusted width */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-right img {
-  width: 100%;
-  max-width: 400px; /* Enlarged image size */
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.about-left h2 {
-  font-size: 36px; /* Increase the font size */
-  font-weight: bold; /* Make it stand out */
-  text-align: left; /* Adjust alignment if needed */
-  line-height: 1.3; /* Improve readability */
-}
-
-.image-caption {
-  font-size: 0.rem;
-  margin-bottom: 20px;
-  text-align: center;
-  color: white;
-}
-
-.cta-outline {
-  padding: 10px 20px;
-  border: 1px solid white;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 500;
-}
-.background-section {
-  background-color: #1434A4; /* deep blue */
-  padding: 60px 30px;
-  color: white;
-  text-align: center;
-  font-size: 14px; /* Adjust the size as needed */
-}
-.section-title {
   font-size: 2rem;
   margin-bottom: 40px;
+  text-align: center;
   font-weight: 600;
 }
 
@@ -498,76 +291,11 @@ font-size: 12px;
   margin-bottom: 50px;
 }
 
-
-
-
-
-
-/* Join the Course Section */
-.join-course {
-  background-color: #000;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-  font-family: 'Raleway', sans-serif;
-}
-
-.join-course h2 {
-  font-size: 2.8rem;
-  max-width: 1000px;
-  margin: 0 auto 30px auto;
-  font-weight: 400;
-  line-height: 1.6;
-}
-
-
-.join-course p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-}
-
-.cta-button {
-  display: inline-block;
-  background-color: #0047ff;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
 .cta-button:hover {
   background-color: #0033cc;
 }
 
-.social-links {
-  margin-top: 40px;
-}
-
-.social-links a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: underline;
-  font-size: 0.95rem;
-}
-.join-course {
-  background-color: #000;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
-  font-family: 'Raleway', sans-serif;
-}
-
 @media (max-width: 768px) {
-  .join-course h2 {
-    font-size: 1.8rem;
-  }
-
-  .join-course p {
-    font-size: 1rem;
-  }
-
   .cta-button {
     padding: 10px 20px;
   }
@@ -577,14 +305,22 @@ html {
 }
 
 .card {
-  background-color: black;
   width: 300px;
-  height: 500px;
-  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   display: flex;
   flex-direction: column;
+
+  color: white;
+  padding: 20px;
+  flex: 1;
+  max-width: 350px;
+  justify-content: space-between;
+  height: 100%;
+  text-align: center;
+  
+  background-color: #121212;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
@@ -602,38 +338,6 @@ html {
   display: flex;
   align-items: flex-start;   /* 🔥 top-align text */
   justify-content: center;   /* 🔥 center horizontally */
-}
-
-.signin-section h3 {
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: #111;
-}
-
-.about-left {
-  line-height: 1.8; /* More breathing room */
-  font-size: 1.1rem; /* Slightly larger */
-  max-width: 700px;
-}
-
-.about-section {
-  background: linear-gradient(to right, #111 70%, rgba(0, 0, 0, 0.85)),
-              url('your-bg-image.jpg') center/cover no-repeat;
-}
-
-.form-box input {
-  width: 100%;
-  max-width: 350px; /* or 300px for tighter */
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-.form-box form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 section, .projects-section, .about-ceo, .contact-me {
@@ -666,26 +370,6 @@ img, .ceo-photo img {
 .background-section * {
   position: relative;
   z-index: 1;
-}
-
-.card {
-  color: white;
-  padding: 20px;
-  flex: 1;
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  text-align: center;
-
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-
-  background-color: #121212;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card-container {
