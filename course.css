@@ -182,17 +182,18 @@ hr {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 80%; /* adjust based on how much of the bottom should fade */
+  width: 50%;
+  height: 80%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1.0) 100%);
-  pointer-events: none; /* allows clicks through the overlay */
+  pointer-events: none; 
 }
+
 
 h1 {
     font-size: 28px;
 }
 
-h2 {
+.text-container h2 {
     font-size: 12px;
     font-weight: lighter;
     margin-top: -5px;
@@ -317,15 +318,6 @@ p {
     font-weight: bold;
     margin-bottom: 30px;
 }
-.ethical-ai-section {
-    background-color: black;
-    color: white;
-    width: 100%;
-    max-width: 1200px;
-    margin: 40px auto;
-    text-align: center;
-    padding: 40px 0;
-}
 
 .video-container {
   display: flex;
@@ -338,15 +330,6 @@ p {
     font-weight: bold;
     margin-bottom: 30px;
 }
-.principles-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);/* Center them horizontally */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    gap: 30px;
-}
 
 .icon {
     padding-top: 10px;
@@ -354,39 +337,40 @@ p {
     height: auto;
 }
 
-.principle h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 10px; /* Space below the title */
-}
-
-.principle p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: lightgray;
-}
-
-.principle {
-  background: #111111;
-  border-radius: 10px;
-  padding: 15px 30px;
-}
-.hero {
-  background: linear-gradient(to bottom, #2c2c2c, #1c1c1c); /* dark gradient */
+.about-ceo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 100px 20px;
+  background:black;
   color: white;
-  padding: 60px 20px;
-  text-align: center;
+  text-align: left;
 }
 
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+.about-ceo a {
+  color: white;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+.ceo-photo img {
+  height: 750px;
+  border-radius: 0%;
+  box-shadow: 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.ceo-text {
+  max-width: 600px;
+}
+
+.ceo-title a {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.ceo-title a:hover {
+  color: #b0c4de;
 }
 
 .cta-button {
@@ -397,64 +381,6 @@ p {
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
-}
-.signin-section {
-  background-color: #f9f9f9;
-  padding: 40px 20px;
-  text-align: center;
-  color: black;
-}
-
-form {
-  max-width: 400px;        /* 💡 This sets the desired width */
-  margin: 0 auto;          /* 💡 Center the form */
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.signin-section h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #000; /* 🔹 Ensure heading is visible */
-}
-
-.signin-wrapper {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-
-
-form input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-
-form button {
-  padding: 10px 20px;
-  background-color: #0047ff;
-  border: none;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-
-form p {
-  font-size: 0.9rem;
-  color: #000; /* 🔹 Make 'Don't have an account?' black */
-}
-
-form a {
-  color: #0047ff; /* 🔹 Keep Register link blue */
-  text-decoration: none;
 }
 
 .about-text {
@@ -483,7 +409,7 @@ form a {
 .about-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 80px; /* Increased padding for a larger section */
   background: url('images/bg.jpg') no-repeat center center/cover;
   align-items: center;
@@ -564,7 +490,13 @@ form a {
 font-size: 12px;
 }
 
-
+.contact-group {
+  margin-top: 200px;
+}
+.contact-group a {
+  color: white;
+  margin-bottom: 50px;
+}
 
 
 
