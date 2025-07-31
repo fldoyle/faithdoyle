@@ -98,8 +98,8 @@ h1 {
 }
 
 .text-container h2 {
-    font-size: 12px;
-    font-weight: lighter;
+    font-size: 24px;
+    font-weight: bold;
     margin-top: -5px;
 }
 
@@ -113,7 +113,7 @@ p {
     font-size: 18px;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 50px;
     font-weight: bold;
     display: inline-block;
     background-color: #0047ff;
@@ -194,7 +194,7 @@ p {
   text-align: left;
   color: lightgray;
   background: transparent;
-  padding: 1rem;
+  padding: 1.12rem;
   font-size: 18px;
   font-weight: 450;
   justify-content: space-between;
@@ -208,6 +208,7 @@ p {
   overflow: hidden;
   transition: max-height 0.2s ease;
   padding: 0 10px;
+  text-align: left;
 }
 
 .info-content-principle.active .info-content-principle-content {
@@ -225,7 +226,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 100px 20px;
+  padding: 50px 0px;
   background:black;
   color: white;
   text-align: left;
@@ -236,7 +237,7 @@ p {
 }
 
 .ceo-photo img {
-  height: 750px;
+  height: 900px;
   border-radius: 0%;
   box-shadow: 4px 10px rgba(0, 0, 0, 0.4);
 }
@@ -260,17 +261,16 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 80px; /* Increased padding for a larger section */
+  padding: 20px; /* Increased padding for a larger section */
   background: url('images/bg.jpg') no-repeat center center/cover;
   align-items: center;
-  background-color: #111;
   color: white;
   gap: 40px;
 }
 
 .section-title {
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   text-align: center;
   font-weight: 600;
 }
@@ -317,7 +317,7 @@ html {
   justify-content: space-between;
   height: 100%;
   text-align: center;
-  
+
   background-color: #121212;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);

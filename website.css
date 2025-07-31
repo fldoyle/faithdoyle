@@ -140,7 +140,7 @@ html {
   position: absolute; 
   top: 0;
   left: 0;
-  animation: scroll-hero-images 50s linear infinite; /* Adjust speed as needed */
+  animation: scroll-hero-images 40s linear infinite; /* Adjust speed as needed */
   z-index: 1;
 }
 
