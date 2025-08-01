@@ -11,6 +11,7 @@ body {
   padding: 0;
   text-align: center;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 nav {
@@ -53,7 +54,9 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 .content-container {
@@ -342,6 +345,16 @@ font-size: 12px;
   .cta-button {
     padding: 10px 20px;
   }
+
+  .content-container, .info-content-section{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about-ceo {
+    flex-direction: column-reverse;
+  }
 }
 html {
   scroll-behavior: smooth;
@@ -355,7 +368,6 @@ html {
 
   color: white;
   padding: 20px;
-  flex: 1;
   max-width: 350px;
   justify-content: space-between;
   height: 100%;
@@ -364,6 +376,7 @@ html {
   background-color: #121212;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  justify-self: center;
 }
 
 .card img {
@@ -415,12 +428,6 @@ img, .ceo-photo img {
   z-index: 1;
 }
 
-.card-container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  align-items: flex-start;
-}
 .card:hover {
   transform: scale(1.1); /* Slight zoom effect when hovered */
 }
